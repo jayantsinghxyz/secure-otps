@@ -2,7 +2,8 @@
   "name": "secure-otps",
   "version": "0.0.1",
   "description": "A cryptographically secure One Time Password(OTP) generator",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,10 +24,13 @@
     "url": "https://github.com/jayantsinghxyz/secure-otps/issues"
   },
   "homepage": "https://github.com/jayantsinghxyz/secure-otps#readme",
+  "files": [
+    "lib/**/*"
+  ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.53.0",
     "eslint": "8.34.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "8.6.0",
     "eslint-config-standard-with-typescript": "34.0.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-n": "15.6.1",
