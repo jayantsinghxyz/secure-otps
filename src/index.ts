@@ -4,7 +4,7 @@ export class SecureOtps {
   private min: number;
   private max: number;
 
-  constructor(private readonly length: number) {
+  constructor(readonly length: number) {
     this.min = parseInt("0".padEnd(length, "0"));
     this.max = parseInt("9".padEnd(length, "9"));
   }
