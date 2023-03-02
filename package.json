@@ -1,6 +1,6 @@
 {
   "name": "secure-otps",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A cryptographically secure One Time Password(OTP) generator",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

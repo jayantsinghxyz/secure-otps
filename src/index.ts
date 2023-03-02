@@ -1,6 +1,6 @@
 import { randomInt } from "crypto";
 
-export default class SecureOtps {
+export class SecureOtps {
   private min: number;
   private max: number;
 
