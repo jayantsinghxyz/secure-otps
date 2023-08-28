@@ -13,5 +13,3 @@ export class SecureOtps {
     return randomInt(this.min, this.max).toString().padStart(this.length, "0");
   }
 }
-
-[...Array(100).keys()].map((i) => console.log(new SecureOtps(4).generate()));
