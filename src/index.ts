@@ -4,12 +4,14 @@ export class SecureOtps {
   private min: number;
   private max: number;
 
-  constructor(readonly length: number) {
+  constructor(private readonly length: number) {
     this.min = parseInt("0".padEnd(length, "0"));
     this.max = parseInt("9".padEnd(length, "9"));
   }
 
   public generate(): string {
-    return randomInt(this.min, this.max).toString();
+    return randomInt(this.min, this.max).toString().padStart(this.length, "0");
   }
 }
+
+[...Array(100).keys()].map((i) => console.log(new SecureOtps(4).generate()));
